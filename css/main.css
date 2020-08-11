@@ -30,7 +30,7 @@ html {
  display: block;
  margin-left: auto;
 margin-right: auto;
-padding-top: 1vw;
+padding: 3vw 0vw 2vw 0vw;
 }
 
 .wrapper {
@@ -38,7 +38,7 @@ padding-top: 1vw;
 }
 
 h1 {
-  font-size: 5vw;  
+  font-size: 5vw; 
 }
 
 h2 {
@@ -50,23 +50,32 @@ p {
   font-family: "Tajawal";
 }
 
+.article-header {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 3vw;
+}
+
 .quote {
   background-color: #fff7e8;
   margin: 15px 0px;
   padding: 10px 10px;
   border-left: 3px solid #003366;
-  -webkit-box-shadow: 0px 0px 6px -2px rgba(0,0,0,0.75);
+  /*-webkit-box-shadow: 0px 0px 6px -2px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 0px 6px -2px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 6px -2px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 6px -2px rgba(0,0,0,0.75);*/
 }
 
 .center-img {
   display: block;
   margin: auto;
   border-radius: 3px;
-  -webkit-box-shadow: 0px 0px 21px -5px rgba(0,0,0,0.75);
+  /*-webkit-box-shadow: 0px 0px 21px -5px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 0px 21px -5px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 21px -5px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 21px -5px rgba(0,0,0,0.75);*/
+-webkit-box-shadow: 0px 0px 6px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 6px -2px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 6px -2px rgba(0,0,0,0.75);
 }
 
 
