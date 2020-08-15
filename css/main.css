@@ -11,10 +11,14 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+/** { border: 1px solid red; 
+}*/
+
    html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    background-color: #fffdf7;
   }
 
   html, body {
@@ -25,8 +29,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Nanum Myeongjo';
-    background-color: #fffdf7;
+    font-family: 'Tajawal';
   }
 
   .nav-bar {
@@ -34,6 +37,29 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+  }
+
+  .nav-bar-links {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    margin: 2vw 9vw 0vw 0vw;
+  }
+
+  .nav-bar-link {
+    padding-left: 3vw;
+    font-size: calc(5px + 1vw);
+    font-family: 'Montserrat';
+    text-decoration: none;
+    color: #003366;
+  }
+
+  .nav-bar-link:hover {
+    color: #66CCCC;
+  }
+
+  .nav-bar h2 {
+    font-weight: lighter;
   }
 
   .nav-bar img {
@@ -44,59 +70,63 @@
    padding: 3vw 0vw 2vw 0vw;
  }
 
+ .text-justified {
+  text-justify: inter-word;
+  text-align: justify;
+ }
+
  .wrapper {
   padding: 1vw 25vw;
+}
 
+.wide-wrapper {
+  padding: 3vw 0vw;
+  width: 50%;
 }
 
 h1 {
-  font-size: 7vw; 
+  margin-top: 3vw;
+  font-size: 8vw; 
   font-family: 'Montez';
 }
 
 h2 {
   font-size: 2vw;
+  font-family: 'Montserrat';
+}
+
+h3 {
+  font-size: 1.75vw;
+  font-family: 'Montserrat';
+  color: #003366;
+}
+
+.link-unformatted {
+  text-decoration: none;
+  color: black;
 }
 
 p {
   font-size: calc(7px + 1vw);
-  font-family: "Tajawal";
 }
 
-.button {
-  background-color: white;
-  border-color: white;
+.article-list {
+  margin: 3vw 0vw;
 }
 
-.four-grid {
-width: 80vw;
-display: flex;
-margin-top: 4vw;
-justify-content: space-evenly;
-margin-bottom: 5vw;
-}
-
-.four-grid-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #F7E8CC;
-  color: black;
-  font-family: 'Tajawal';
-  border-radius: 5px;
-  border-color: black;
-  border-width: 50px;
-  font-size: 2vw;
+.article-link {
   text-decoration: none;
-  width: 15vw;
-  height: 8vw;
-  -webkit-box-shadow: 0px 0px 42px -28px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 42px -28px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 42px -28px rgba(0,0,0,0.75);
+  font-size: 2vw;
+  color: #003366;
 }
 
-.four-grid-button:hover {
-  background-color: #f2c563;
+.article-link:hover {
+  color: #66CCCC;
+}
+
+.article-organizer {
+  margin-bottom: 4vw;
+  font-family: 'Montserrat';
 }
 
 .article-header {
@@ -110,9 +140,14 @@ margin-bottom: 5vw;
   margin: 15px 0px;
   padding: 10px 10px;
   border-left: 3px solid #003366;
+  font-size: calc(6px + 1vw);
   /*-webkit-box-shadow: 0px 0px 6px -2px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 0px 6px -2px rgba(0,0,0,0.75);
 box-shadow: 0px 0px 6px -2px rgba(0,0,0,0.75);*/
+}
+
+ol {
+  font-size: 1.5vw;
 }
 
 .center-img {
