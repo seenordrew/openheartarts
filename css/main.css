@@ -91,7 +91,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2vw;
+  font-size: 2.25vw;
   font-family: 'Montserrat';
 }
 
@@ -155,20 +155,79 @@ box-shadow: 0px 0px 6px -2px rgba(0,0,0,0.75);*/
   font-style: italic;
 }
 
-ol {
+.two-clm-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  margin-top: 40px;
+}
+
+.two-clm-grid img {
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 30px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 30px -5px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 30px -5px rgba(0,0,0,0.75);
+}
+
+.caption-img {
+  margin: 5vw 0vw;
+}
+
+.caption-img p {
+  text-align: center;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+ol, ul {
   font-size: 1.5vw;
 }
 
-.center-img {
+.center-img-full {
   display: block;
   margin: auto;
   border-radius: 3px;
+  width: 100%;
   /*-webkit-box-shadow: 0px 0px 21px -5px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 0px 21px -5px rgba(0,0,0,0.75);
 box-shadow: 0px 0px 21px -5px rgba(0,0,0,0.75);*/
 -webkit-box-shadow: 0px 0px 6px -2px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 0px 6px -2px rgba(0,0,0,0.75);
 box-shadow: 0px 0px 6px -2px rgba(0,0,0,0.75);
+}
+
+.center-img-half {
+  display: block;
+  margin: auto;
+  border-radius: 3px;
+  width: 50%;
+  /*-webkit-box-shadow: 0px 0px 21px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 21px -5px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 21px -5px rgba(0,0,0,0.75);*/
+-webkit-box-shadow: 0px 0px 6px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 6px -2px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 6px -2px rgba(0,0,0,0.75);
+}
+
+.video-box {
+  margin: 5vw auto;
+  width: 100%;
+}
+
+.video-outline {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  //margin-top: 2vw;
+  height: 0;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .comment-section {
@@ -205,6 +264,10 @@ box-shadow: 0px 0px 6px -2px rgba(0,0,0,0.75);
   font-size: calc(12px + 1vw);
   }
 
+  .two-clm-grid {
+    grid-template-columns: 1fr;
+  }
+
   .article-link {
   font-size: 5vw;
   }
@@ -213,7 +276,7 @@ box-shadow: 0px 0px 6px -2px rgba(0,0,0,0.75);
   font-size: calc(8px + 1vw);
   }
 
-  ol {
+  ol, ul {
   font-size: calc(12px + 1vw);
   }
 }
